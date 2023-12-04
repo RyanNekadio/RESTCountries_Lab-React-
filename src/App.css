@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+.appName {
+  text-align: center;
+}
+
+.countries {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.text-container {
+  /* Ensure this container takes up the full width if needed */
+  width: 100%;
+}
+
+.allCountriesList {
+  list-style-type: none;
+}
+
+.visitedCountriesList {
+  list-style-type: none;
+}
