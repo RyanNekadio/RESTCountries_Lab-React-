@@ -1,12 +1,19 @@
 
+const VisitedCountries = ({ countries, unmarkAsVisited }) => {
 
-const VisitedCountries = () => {
-
-    return (
-        <div class='visitedCountries'>
-            <h1>Visited Countries</h1>
-        </div>
-    );
+  return (
+    <div>
+      <h2>Visited Countries</h2>
+      <ul class='visitedCountries'>
+        {countries.map(country => (
+          <li key={country.name.common}>
+            {country.name.common}
+            <button onClick={() => unmarkAsVisited(country)}>Remove</button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 };
 
 export default VisitedCountries;

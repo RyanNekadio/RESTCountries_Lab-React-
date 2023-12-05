@@ -1,18 +1,19 @@
 
-const AllCountries = ( {countries}) => {
+const AllCountries = ({ countries, markAsVisited }) => {
 
-    return (
-        <div>
-            <h1>All Countries</h1>
-            <ul class='allCountriesList'>
-                {countries.map((country) => (
-                    <li key={country.id}>
-                        {country.name.common}
-                    </li>
-                ))}
-            </ul>
-        </div>
-    );
+  return (
+    <div>
+      <h2>All Countries</h2>
+      <ul class='allCountries'>
+        {countries.map(country => (
+          <li key={country.name.common}>
+            {country.name.common}
+            <button onClick={() => markAsVisited(country)}>Visited</button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 };
 
 export default AllCountries;

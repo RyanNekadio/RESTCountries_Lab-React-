@@ -47,15 +47,21 @@
   justify-content: space-evenly;
 }
 
-.text-container {
-  /* Ensure this container takes up the full width if needed */
-  width: 100%;
-}
 
-.allCountriesList {
+.allCountries {
   list-style-type: none;
 }
 
-.visitedCountriesList {
-  list-style-type: none;
+
+.allCountries li {
+  margin-bottom: 5px; 
 }
+
+.allCountries button {
+  margin-left: 5px; 
+}
+
+.visitedCountries {
+  list-style-type: none;
+} 
+
